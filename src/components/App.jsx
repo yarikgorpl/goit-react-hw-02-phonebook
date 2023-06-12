@@ -18,7 +18,7 @@ class App extends Component {
     };
 
     const newContact = this.state.contacts.some(
-      newContact => newContact.name === contact.name
+      newContact => newContact.name.toLowerCase() === contact.name.toLowerCase()
     );
 
     if (newContact) {
